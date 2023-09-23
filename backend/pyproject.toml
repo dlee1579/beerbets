@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Lee <dlee1579@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pip = "^23.2.1"
+djangorestframework = "^3.14.0"
+
+[tool.poetry.dev-dependencies]
+Django = "^4.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
