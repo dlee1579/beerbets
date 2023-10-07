@@ -16,6 +16,7 @@ Including another URLconf
 from backend.views import Home
 from django.contrib import admin
 from django.urls import include, path
+from users.api.views import LoginView
 
 urlpatterns = [
     path("users/", include("users.urls")),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('api/', include("api.urls")),
     path('accounts/', include('allauth.urls')),
     path('', Home.as_view(), name='home'),
+    path('login', LoginView.as_view(),)
 ]
